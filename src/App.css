@@ -1,8 +1,27 @@
+
+/* overrides */
+:root {
+  --bs-body-bg: #11134f;
+  --bs-body-color: $white;
+  --bs-link-hover-color-rgb: rgb(223, 222, 183);
+  --bs-navbar-brand-hover-color: var(--bs-link-hover-color-rgb);
+}
+
+/* custom */
+:root {
+  --body-bg-gradient: linear-gradient(#11134f, #552288);
+}
+
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: center;
+}
+
+body {
+  background: var(--body-bg-gradient);
 }
 
 .logo {
@@ -11,6 +30,7 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -39,4 +59,13 @@
 
 .read-the-docs {
   color: #888;
+}
+
+nav {
+  color: #b496cd;
+}
+
+.navbar-collapse {
+  flex-basis: unset !important;
+  flex-grow: unset !important;
 }
